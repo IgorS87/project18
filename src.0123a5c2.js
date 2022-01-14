@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"/home/runner/work/project18/project18/src/images/advantages/advantages-one-mobile2x.png":[["advantages-one-mobile2x.9881e9f2.png","NzyW"],"NzyW"],"/home/runner/work/project18/project18/src/images/advantages/advantages-two-mobile2x.png":[["advantages-two-mobile2x.303567c6.png","vOuQ"],"vOuQ"],"/home/runner/work/project18/project18/src/images/advantages/advantages-three-mobile2x.png":[["advantages-three-mobile2x.ef55c4d3.png","rUtk"],"rUtk"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/project18/src.19cdd7c3.js.map
+//# sourceMappingURL=/project18/src.0123a5c2.js.map
