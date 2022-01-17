@@ -1,19 +1,35 @@
 .modalka {
   position: absolute;
-  top: 20%;
-  right: 75%;
   opacity: 1;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 998;
-  &.header__modal--is-hidden {
+  z-index: 51;
+  transform: translate(-50% -50%);
+  &.is-hidden-modal {
     opacity: 0;
     pointer-events: none;
+  }
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 4;
   }
 }
 
 .modal {
   text-align: center;
   margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 40px;
+  }
 }
 
 .modal-word {
@@ -32,14 +48,14 @@
 }
 
 .button-header__modal {
-  position: absolute;
+  width: 500px;
+  height: 700px;
   margin: 0px;
-  width: 300px;
-  height: 750px;
   padding: 15px;
   border-radius: 15px;
   background-color: $products-bg-one;
-  background-image: url(/images/how-made-milk.png);
+  background-image: url(/images/about/about-milk-desktop.png);
+
   box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14), 0px 1px rgba(0, 0, 0, 0.12);
 }
 
@@ -123,6 +139,11 @@
   border-color: transparent;
   cursor: pointer;
   transition-property: transform;
+}
+
+.modal_submit:hover {
+  transform: scale(1.2);
+  transition-duration: 500ms;
 }
 
 .modal_submit:hover {
